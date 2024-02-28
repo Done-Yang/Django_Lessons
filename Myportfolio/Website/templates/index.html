@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+	{% for pro in profile %}
+	<div class="content-back"></div>
+	<div class="hero">
+		<div class="content row">
+			<div class="col-12">
+				<h4>Hello, my name is</h4>
+				<h1 class="fname">Done Yang</span></h1>
+				<h6>I'am a Computer Science student, Who attempt to be <br> a full stack developer and develop AI model</h6>
+				<!-- <div class="newslatter">
+					<h5 id="action">Command</h5>
+					<form action="{% url 'scm' %}" method="POST" class="messege">
+						{% csrf_token %}
+						<input type="text" name="message" id="messenge" placeholder="Your command here.." required>
+						<input type="submit" name="submit" id="messenge2" value="Send">
+					</form>
+				</div> -->
+			</div>
+			<!-- {% for cm in comment %}
+			<div class="show_cm">
+				<h6 id="cm">{{ cm.comment }}</h6><br>
+				<p>{{ Cm.ratting }}</p>
+			</div>
+			{% endfor %} -->
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about">
+		<div class="main">
+			<img src="{% static 'images/done.png' %}">
+			<div class="about-text">
+				<h2 id="pf">Profile</h2>
+				<h5>Aim To A Full Stack Developer <span>& Develop AI Model</span></span></h5>
+				<p>I am a Computer Science student at the university, with a strong focus on web development throughout my time here. I have gained expertise in both Front-end and Back-end development. As a sophomore, I have honed my skills and I am now ready to work on web development projects. You can trust me to deliver excellent results.</p>
+				<button type="button" class="button">Send E-mail</button>
+			</div>
+		</div>
+	</section>
+	{% endfor %}
+	<!-----service section start----------->
+	<div class="skills">
+		<div class="title">
+			<h2 id="sk">Skills</h2>
+		</div>
+		<!-- <div class="box">
+			{% for skill in skills %}
+			<div class="card">
+				{% if skill.icon %}
+				<img src="{{ skill.icon.url }}" alt="">
+				{% endif %}
+				<h5>{{ skill.title }}</h5>
+				<div class="pra">
+					<div class="pgm_lg">
+						<p>{{ skill.detial }}</p>
+					</div>
+
+					<p style="text-align: center;">
+						<a class="button" href="{{ skill.performance }}">performance</a>
+					</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div> -->
+		<div class="box">
+			<div class="card_">
+				<!-- <img src="../media/profile.png" alt=""> -->
+				<div class="d-flex justify-content-center text-primary icon"><i class="bi bi-person"></i></div>
+				<h5>Soft skills</h5>
+				<div class="pra">
+					<div class="pgm_lg">
+						<p>Problem solving, Time management, Able learn the new thing every times, Team work</p>
+					</div>
+					<p style="text-align: center;">
+						<a class="button" href="#">performance</a>
+					</p>
+				</div>
+			</div>
+			<div class="card_">
+				<!-- <img src="../media/profile.png" alt=""> -->
+				<div class="d-flex justify-content-center text-primary icon"><i class="bi bi-code-square"></i></div>
+				<h5>Coding Skills</h5>
+				<div class="pra">
+					<div class="pgm_lg">
+						<p>Python, Django, PHP, HTML-CSS, Javascript, Bootstrap, SQL, Chat GPT</p>
+					</div>
+					<p style="text-align: center;">
+						<a class="button" href="#">performance</a>
+					</p>
+				</div>
+			</div>
+			<div class="card_">
+				<!-- <img src="../media/profile.png" alt=""> -->
+				<div class="d-flex justify-content-center text-primary icon"><i class="bi bi-translate"></i></div>
+				<h5>Foriegn Languages</h5>
+				<div class="pra">
+					<div class="pgm_lg">
+						<p>English <br> Thai <br> Lao, Hmong</p>
+					</div>
+					<p style="text-align: center;">
+						<a class="button" href="#">performance</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pgm_chart">
+		<h5 class="wepr">Experiences by month</h5>
+		<div class="chart">
+			<div class="row mt- 5">
+				{% block add_sheet %}{% endblock %}
+			</div>
+			<div class="sheet">
+				<canvas id="myChart"></canvas>
+				<script>
+					const ctx = document.getElementById('myChart').getContext('2d');
+					const myChart = new Chart(ctx, {
+					    type: 'bar',
+					    data: {
+					        labels: [{% for experain in experains %}, '{{experain.title}}', {% endfor %}],
+					        datasets: [{
+					            label: 'Progamming Language',
+					            data: [{% for experain in experains %}, {{experain.expr_month}}, {% endfor %}],
+					            backgroundColor: [
+					                'rgba(255, 99, 132, 0.2)',
+					                'rgba(54, 162, 235, 0.2)',
+					                'rgba(255, 206, 86, 0.2)',
+					                'rgba(75, 192, 192, 0.2)',
+					                'rgba(153, 102, 255, 0.2)',
+					                'rgba(255, 159, 64, 0.2)'
+					            ],
+					            borderColor: [
+					                'rgba(255, 99, 132, 1)',
+					                'rgba(54, 162, 235, 1)',
+					                'rgba(255, 206, 86, 1)',
+					                'rgba(75, 192, 192, 1)',
+					                'rgba(153, 102, 255, 1)',
+					                'rgba(255, 159, 64, 1)'
+					            ],
+					            borderWidth: 1
+					        }]
+					    },
+					    options: {
+					        scales: {
+					            y: {
+					                beginAtZero: true
+					            }
+					        }
+					    }
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	<!------Contact Me------>
+	<div class="contact-me">
+		<p>Let Me Be A Part Of Your Oganization.</p>
+		<a class="button-two" href="#">Send E-mail</a>
+	</div>
+{% endblock %}

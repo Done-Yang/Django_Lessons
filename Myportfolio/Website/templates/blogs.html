@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+	<!----hero Section start---->
+	<nav class="row">
+        <div class="col-2">
+            <a href="{% url 'home' %}" class="logo">Portfo<span>lio</span></a>
+        </div>
+        <ul class="col-8 text-end">
+            <li><a href="{% url 'home' %}#pf">profile</a></li>
+            <li><a href="{% url 'home' %}#sk">Skills</a></li>
+            <li><a href="{% url 'blogs' %}">Blogs</a></li>
+        </ul>
+        <!-- <div class="col-2 text-end">
+            <buttom class="btn"><i class="fa-solid fa-sun"></i></buttom>
+        </div> -->
+    </nav>
+    <!-- home  -->
+    <div class="box2__2">
+        <div class="box2_post">
+
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cover_post">
+                <div class="left">
+                    <p id="date">10.3.2022 8:30</p>
+                    <div class="post_poster">
+                        <img src="{% static 'images/hmongclothes.jpg' %}" alt="Post image">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post_desc">
+                        <b id="desc_title">title</b>
+                        <p id="post_desc">dec Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque esse maxime? Consectetur velit dolores totam illo ipsum harum delectus, deserunt, reiciendis tempore fuga inventore non debitis ex beatae unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ut voluptatem ad illo minus delectus, alias quas inventore quis. Atque eum quis error, similique veniam odit blanditiis non cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus nisi voluptatibus soluta aliquid, rerum quia error harum neque necessitatibus repudiandae atque praesentium saepe sit quis, unde dolorem a quidem.
+                        </p>
+                    </div>
+    
+                    <button id="like">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- pageginator -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="Page navigation">
+
+                    <ul class="paginator justfy-content-start">
+
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

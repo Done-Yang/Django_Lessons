@@ -1,0 +1,2 @@
+For a full list of options, refer to the commands own help by running:  python manage.py collectstatic --help
+ 

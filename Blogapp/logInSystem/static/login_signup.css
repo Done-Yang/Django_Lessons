@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Iceland&family=Indie+Flower&family=Pacifico&family=Qwitcher+Grypen&family=Rubik&family=Rubik+Maze&family=Shadows+Into+Light&display=swap');
+body {
+  background-color: rgb(235, 235, 235);
+}
+*{
+    font-family: Rubik;
+}
+/* Log In syle */
+.box1 {
+    background: rgb(97, 119, 247);
+    background: linear-gradient(0deg, rgba(97, 119, 247) 22%, rgba(4,223,253,0.49250774502013783) 89%);
+    width: 20em;
+    height: 90vh;
+    margin-left: 38%;
+    border-radius: 10px;
+}
+.h1 {
+    text-align: center;
+    margin-top: 5px;
+}
+.box2 {
+    margin-left: 20px;
+}
+.box3 {
+    margin-left: 20px;
+}
+.login_input{
+    outline: none;
+    width: 260px;
+    height: 30px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+.button {
+    text-align: center;
+}
+.button button{
+    background: rgb(4,7,253);
+    background: linear-gradient(25deg, rgba(135, 187, 255, 0.831) 25%, rgba(5, 97, 246, 0.91) 82%);
+    color:  aquamarine;
+    font-size: 20px;
+    width: 30%;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+}
+.button button:hover{
+    background: rgba(118, 214, 252, 0.507);
+}
+.a__signUp {
+    color: white;
+    margin-left: 35%;
+}
+
+.signup1 {
+    margin-top: 40px;
+    text-align: center;
+}
+.a__signUp1 {
+    color: black;
+}
+.a__signUp2 {
+    font-size: 20px;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+/* input {
+    border: solid 0;
+} */
+
+/* Sign Up syle */
+.box_login {
+    width: 50%;
+    height: 34em;
+    margin: 10px 0 0 25%;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Rubik;
+    font-size: 18px;
+  }
+  .form_crop {
+    padding: 50px;
+  }
+  .tag input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: rgb(131, 131, 131) solid 1px;
+  }
+  .form_crop {
+    padding: 30px;
+  }
+  .tag p {
+    margin-top: 7px;
+  }
+  .form_crop button{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    float: right;
+    background-color: rgba(51, 88, 255, 0.805);
+    font-size: 18px;
+    border: none;
+  }
+  .form_crop button:hover{
+    background-color: rgba(39, 68, 201, 0.805);
+  }
+  .donot {
+    margin-top: 50px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,42 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block content %} 
+<link rel="stylesheet" href="{% static 'viewblog.css' %}">
+
+<!-- for view blog page -->
+
+<div class="box2_post">
+    <div class="cover_post">
+        <div class="post_poster">
+            <img src="{% static 'image/done.png' %}" alt="Post image">
+        </div>
+        <div class="post_desc">
+            <p id="desc_title">category</p>
+            <p id="post_desc">descriptions
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis iusto ipsum vero deleniti tempore minus reiciendis veniam aspernatur autem quam dolorem accusamus, totam consequuntur molestiae consequatur quas, inventore minima.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus explicabo quidem, quam beatae natus tempora in porro error placeat repellendus? Soluta beatae alias quidem vero sed quos inventore. Debitis, tempora.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dolor accusamus eveniet ullam mollitia totam vel cupiditate laborum error voluptas numquam adipisci obcaecati, non, vitae, reiciendis quis corrupti. Sunt, suscipit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil dolorum quas, quos, vero veniam odio omnis rem minima ipsum, numquam sunt. Commodi, labore minima nobis eveniet quisquam autem impedit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quasi molestias dolores pariatur iusto, odio possimus, illum, aliquid corporis cumque quae minus veritatis corrupti earum accusantium. Provident voluptatibus labore perspiciatis!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe optio eius ullam modi? Similique reiciendis, odio dolore quam exercitationem tempore, quaerat vero voluptate eos accusamus ad, suscipit aspernatur saepe praesentium.
+            </p>
+        </div>
+        <hr>
+        <div class="post_foot">
+            <button id="like">
+                <i class="fa-regular fa-thumbs-up" id="like_white"></i>
+                <b>Like</b>
+            </button>
+            <button>
+                <a href="{% url 'home' %}">Finished</a>
+            </button>
+            <!-- <button id="fvr">
+                <i class="fa-regular fa-heart" id="fvr_color"></i>
+                <b>Favorite</b>
+            </button> -->
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

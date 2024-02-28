@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Iceland&family=Indie+Flower&family=Pacifico&family=Qwitcher+Grypen&family=Rubik&family=Rubik+Maze&family=Shadows+Into+Light&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(139, 139, 139, 0.193);
+}
+:root{
+    --color--white: #fff;
+    --color--gold: #ffd700;
+    --color--pink: #fa91a0;
+    --color--blue: #90d2c8;
+}
+a{
+    text-decoration: none;
+}
+.box1_boxfoot {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.box1{
+    font-family: Shadows Into Light;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 5px 30px;
+}
+#input {
+    height: 30px;
+    width: 15em;
+}
+.search {
+    position: relative;
+    height: 35px;
+    max-width: 300px;
+    width:100%;
+    border-radius: 3px;
+}
+.search input {
+    position: absolute;
+    border: 1px solid #cdcdcd;
+    background-color: #b5e1e0;
+    padding: 0 20px 0 50px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+}
+.search i {
+    position: absolute;
+    left: 15px;
+    font-size: 22px;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #707070;
+}
+.name a{
+    display: flex;
+    margin-left: 20px;
+    font-family: Iceland;
+}
+.name a img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  margin-bottom: 3px;
+  border-radius: 100px;
+}
+.name a h1{
+  margin-top: 11px;
+  font-size: 25px;
+  color: black;
+}
+.ls a{
+    margin-right: 10px;
+    color: #90d2c8;
+}
+.fvrite i{
+    color: gold;
+    font-size: 30px;
+}
+.login a{
+    color: var(--color--blue);
+    font-size: 30px;
+    padding-right: 10px;
+}
+.fvrite a{
+    color: #fa91a0;
+    font-size: 25px;
+}
+.b1 {
+    font-size: 25px;
+}
+.b1 :hover{
+    background-color: rgb(224, 252, 244);
+}
+.fvrite :hover{
+    background-color:  rgb(224, 252, 244);;
+}
+
+.boxfoot {
+    background-color: cornflowerblue;
+    width: 100%;
+    display: flex;
+    padding: 3px 0;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.boxfoot a{
+    font-size: 25px;
+    color: #34fcde;
+}
+.boxfoot p{
+    font-family: Shadows Into Light;
+    font-size: 15px;
+    color: #f1bb55;
+}
+.image img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 0 30px 0 0;
+    border-radius: 30px;
+    border: #11bcf5 solid 2px;
+}
+.second_image {
+    padding-bottom: 10px;
+    display: flex;
+    margin-left: -20px;
+    color: #11bcf5;
+    font-size: 18px;
+}
+.second_image p {
+    margin:15px 0 0 -20px;
+
+}
+
+/* post style */
+.box2_post {
+    width: 90%;
+    margin: 10px 20px 0 30px;
+    font-family: Rubik;
+}
+.cover_post {
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.post_info {
+    display: flex;
+    align-items: center;
+}
+.post_info #name{
+    margin-left: 10px;
+}
+.post_info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.post_poster {
+    text-align: center;
+}
+.post_poster img{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+.post_desc{
+    border: rgb(170, 170, 170) solid 0.5px;
+    padding:3px 5px 20px 5px;
+    border-radius: 10px;
+}
+.post_desc #desc_title{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.post_desc p{
+    margin-top: 5px;
+}
+.post_foot {
+    margin: 10px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.post_foot #like_white, #fvr_color, a{
+    font-size: 20px;
+    color: black;
+}
+
+/* home lelf */
+.activity {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-family: Rubik Maze;
+}
+.home_screen {
+    display: flex;
+}
+.box2__1 {
+  display: inline-block;
+  padding: 10px 0 0 25px;
+  width: 23%;
+  background-color: #fff;
+  position:sticky;
+  left: 0;
+  top: 2.8em;
+  bottom: 0;
+  height: 89vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.box2__2 {
+    width: 77%;
+}
+.b2_1{
+    height: 3em;
+    padding: 10px 10px;
+    background-color: #426770;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Indie Flower;
+    width: 80%;
+}
+.b2_1:hover {
+    background-color: #426770ea;
+    color: #4a5a52;
+}
+.b2_1 a{
+    font-size: 20px;
+    color: #b0cabd;
+}
+
+.box2__1 p{
+    text-align: left;
+    font-size: 15px;
+    font-family: Rubik;
+    padding-bottom: 20px;
+}
+.footer {
+    display: flex;
+    padding:10px 0 0 20px;
+    background-color: #535c66;
+    font-family: Rubik;
+}
+.fff {
+    width: 20%;
+    padding-left: 60px;
+}
+.footer_first {
+    margin-left: 30px;
+}
+.footer_first h1 {
+    font-family: Iceland;
+    font-size: 50px;
+    margin-top: 10px;
+}
+.first_contend #ct{
+   text-align: center;
+   margin: 10px 0 5px 0; 
+}
+.ic {
+    display: flex;
+}
+.ic i{
+  font-size: 20px;  
+}
+#wsa{
+    color: rgb(6, 70, 0);
+}
+#gm {
+    color: #9c5300;
+}
+#c {
+    color: rgb(46, 120, 141);
+}
+.ic #p {
+    font-size: 15px;
+    margin-left: 5px;
+}
+#flu {
+    text-align: center;
+    margin-top: 10px;
+}
+.flu_icon i{
+    font-size: 30px;
+    margin: 5px 30px 0 0;
+}
+#fb{
+    color: #2443a8;
+}
+#istg{
+    color: #934000;
+    border-radius: 30px;
+}
+#tt {
+    color: black;
+}
+#twt{
+    color: #2473a8;
+}
+#h3{
+    margin-top: 20px;
+}
+.ff a{
+    color: #123444;
+}
+.ff a:hover{
+    text-decoration: underline;
+}
+.footer_fourth {
+    text-align: center;
+    width: 30%;
+    padding-left: 60px;
+    margin-top: 80px;
+}
+.footer_fourth #fourth_login{
+    font-family: Shadows Into Light;
+    background-color: #90d2c8;
+    color: #2b5f66;
+    padding: 2px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.footer_fourth #fourth_login:hover{
+    background-color: #91c5be;
+}
+.footer_fourth p{
+    margin-top: 10px;
+}
+#fourth_a {
+    color: #123444; 
+}
+#fourth_a:hover{
+    text-decoration: underline;
+} 
+
+.row {
+    text-align: center;
+    
+}

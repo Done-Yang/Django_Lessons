@@ -1,0 +1,6 @@
+index.html
+homebase.html
+navbar.html
+adminlogin.html
+admindashboard.html
+adminbase.html

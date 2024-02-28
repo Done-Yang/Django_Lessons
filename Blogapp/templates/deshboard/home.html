@@ -1,0 +1,40 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block content %}
+<!-- home  -->
+<div class="box2__2">
+    <div class="box2_post">
+        {% for b in blogs %}
+        <div class="cover_post">
+            <div class="post_info">
+                <h5 id="name">{{b.category}}</h5>
+            </div>
+            <p id="date">{{b.created}}</p>
+            <div class="post_poster">
+                <img src="{{b.image.url}}" alt="Post image">
+            </div>
+            <div class="post_desc">
+                <b id="desc_title">{{b.name}}</b>
+                <p id="post_desc">{{b.dsc}}</p>
+            </div>
+            <hr>
+            <div class="post_foot">
+                <button id="like">
+                    <i class="fa-regular fa-thumbs-up" id="like_white"></i>
+                    <b>Like</b>
+                </button>
+                <button>
+                    <a href="{% url 'viewblog' %}">Read</a> 
+                </button>
+                <!-- <button id="fvr">
+                    <i class="fa-regular fa-heart" id="fvr_color"></i>
+                    <b>Favorite</b>
+                </button> -->
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}   
+</body>
+</html>

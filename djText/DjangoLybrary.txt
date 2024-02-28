@@ -1,0 +1,3 @@
+django: django module for work with django project
+django-crispy-forms: for able work with bootstrap 4
+python-slugify: 

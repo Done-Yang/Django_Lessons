@@ -1,0 +1,30 @@
+# How To Upload files in django
+1. in setting
+	MEDIAURL = '/static/'
+	MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+	STATIC_URL = '/static/'
+	STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+	STATICFILES_URLS = [os.path.join(BASE_DIR, '/static')]
+
+2. in urls of project "urlpatterns"
+	from django.conf import settings
+	from django.conf.urls.static import static
+	
+	add: "+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)" to urlpatterns
+
+	urlpatterns = [
+    		path('admin/', admin.site.urls),
+    		path('', include('iATERapp.urls'))
+		] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)	
+
+3. in cmd
+	1). python manage.py makemigations
+	2). python manage.py migrate
+
+4. in html file
+	    {% for news_loop in news %}
+        	<h2>{{news_loop.title}}</h2>
+        	<p>{{news_loop.desc}}</p>
+        	<img src="{{news_loop.image.url}}" alt="">
+    	    {% endfor %}
